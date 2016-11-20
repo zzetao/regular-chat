@@ -1,0 +1,12 @@
+<chat-header username={session && session.name} />
+<contact-list on-selected={session = $event} />
+{#if session}
+<div class="chat-body">
+	<message-list  session={session} />
+	<message-reply session={session} on-reply={session.messages.push($event)} />
+</div>
+{#else}
+<div class="chat-empty">
+	<div class="emoticon">｡･ﾟ☆━ㄟ(〃'▽'〃ㄟ)</div>
+</div>
+{/if}
