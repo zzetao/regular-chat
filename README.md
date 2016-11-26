@@ -6,7 +6,7 @@ Beautiful Chat APP Bulit [RegularJs](https://github.com/regularjs/regular)
 
 ## Screenshots
 
-![screenshots](https://cloud.githubusercontent.com/assets/8110936/20641930/daf98198-b43d-11e6-9587-f44483d4ae23.png)
+![screenshots](https://cloud.githubusercontent.com/assets/8110936/20642111/a2774e0a-b441-11e6-9205-80aafefefe56.png)
 
 
 
