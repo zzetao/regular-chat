@@ -1,7 +1,9 @@
 import Regular from 'regularjs';
+import restate from './lib/restate.js';
 
-import index from './views/index/index.js';
-import chat from './views/chat/chat.js';
+import Layout from './views/layout/layout.js';
+import Index from './views/index/index.js';
+import Chat from './views/chat/chat.js';
 
 // directives
 import Directives from './directives/index.js';
@@ -13,6 +15,7 @@ import Loading from './components/loading.js';
 // style
 import './styles/style.scss';
 
+// event
 Regular.event('enter', function(element, fire){
   Regular.dom.on(element, 'keypress', function(ev){
   
@@ -20,8 +23,27 @@ Regular.event('enter', function(element, fire){
   })
 })
 
-new Regular({
-	template: `
-		<chat-view />
-	`
-}).$inject('#app')
+let stateman = restate({
+	view: document.getElementById('#app'),
+	Component: Regular
+})
+
+// register routes
+stateman
+	.state("app", Layout, "")
+	.state("app.index", Index, {
+		url: ""
+	})
+	.state("app.chat", Chat, {
+		url: "chat"
+	})
+	.on("notfound", () => {
+		console.log('[Router]: not found')
+	})
+	.on("begin", (option) => {
+		console.log('[Router]: ',option, this)
+	})
+	.start({
+		html5: false,
+		prefix: '!'
+	})

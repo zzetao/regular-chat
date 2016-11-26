@@ -1,10 +1,12 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var SRC_PATH = path.resolve(__dirname, './src');
 
 module.exports = {
+    devtool: 'source-map',
     entry: [
         './src/index.js',
     ],

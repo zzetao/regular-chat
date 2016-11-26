@@ -182,6 +182,7 @@ body {
 
 				img {
 					width: 100%;
+					border-radius: 50%;
 				}
 			}
 		}
@@ -218,6 +219,7 @@ body {
   	width: $s-sidebar-left;
   	border-right: 1px solid #ddd;
   	color: $c-base;
+  	cursor: pointer;
   }
 
   .chat-topic {
@@ -460,4 +462,13 @@ body {
 	text-align: center;
 	color: #999;
 	padding: 30px 0;
+}
+.no-messages {
+	position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  text-align: center;
+  font-size: 28px;
+  color: #ddd;
 }

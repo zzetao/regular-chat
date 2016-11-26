@@ -2,7 +2,7 @@ import Regular from 'regularjs';
 
 import tpl from './contact-list.html';
 
-let avatar = require('./../assets/avatar.png');
+let avatar = require('./../assets/avatar/mark.png');
 
 import axios from 'axios';
 import store from 'store';

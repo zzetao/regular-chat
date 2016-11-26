@@ -14,4 +14,7 @@
 		</div>
 	</div>
 	{/list}
+	{#if session.messages.length === 0}
+	<div class="no-messages">Say something...</div>
+	{/if}
 </div>

@@ -29,17 +29,17 @@
     "babel-register": "^6.18.0",
     "babel-runtime": "^6.18.0",
     "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
-    "node-sass": "^3.11.2",
+    "node-sass": "^3.13.0",
     "raw-loader": "^0.5.1",
     "rgl-loader": "^0.4.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2",
-    "node-sass": "^3.13.0"
+    "webpack-dev-server": "^1.16.2"
   }
 }

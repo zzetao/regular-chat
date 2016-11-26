@@ -2,7 +2,7 @@ import Regular from 'regularjs';
 
 import tpl from './message-list.html';
 
-let avatar = require('./../assets/avatar.png');
+let avatar = require('./../assets/avatar/mark.png');
 
 export default Regular.extend({
 	name: 'message-list',
@@ -15,7 +15,7 @@ export default Regular.extend({
 		setTimeout(() => {
 			// 渲染可能需要时间，所以做了延迟
 			messageList.scrollTop = messageList.scrollHeight;
-		},100)
+		},30)
 	},
 	config (data){
 		// 有新的消息自动滚到底部

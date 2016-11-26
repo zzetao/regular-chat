@@ -10,5 +10,6 @@ export default Regular.extend({
 	template: tpl,
 	startHandler: function(name){
 		console.log('[name]: ',name)
+		this.$root.$state.go('app.chat')
 	}
 })

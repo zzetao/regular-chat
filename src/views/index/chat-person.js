@@ -8,30 +8,30 @@ export default Regular.extend({
 	data: {
 		person: [
 			{
-				name: 'Mark',
-				intro: 'Markus Michael Patrick Feehily',
-				avatar_url: require('../../assets/avatar.png')
+				name: 'Nicky',
+				intro: 'Nicky Byrne',
+				avatar_url: require('../../assets/avatar/nicky.png')
+			},
+			{
+				name: 'Bryan',
+				intro: 'Bryan McFadden',
+				avatar_url: require('../../assets/avatar/bryan.png')
+			},
+			{
+				name: 'Shane',
+				intro: 'Shane Steven Filan',
+				avatar_url: require('../../assets/avatar/shane.png')
+			},
+			{
+				name: 'Kian',
+				intro: 'Kian John Francis Egan',
+				avatar_url: require('../../assets/avatar/kian.png')
 			},
 			{
 				name: 'Mark',
 				intro: 'Markus Michael Patrick Feehily',
-				avatar_url: require('../../assets/avatar.png')
-			},
-			{
-				name: 'Mark',
-				intro: 'Markus Michael Patrick Feehily',
-				avatar_url: require('../../assets/avatar.png')
-			},
-			{
-				name: 'Mark',
-				intro: 'Markus Michael Patrick Feehily',
-				avatar_url: require('../../assets/avatar.png')
-			},
-			{
-				name: 'Mark',
-				intro: 'Markus Michael Patrick Feehily',
-				avatar_url: require('../../assets/avatar.png')
-			},
+				avatar_url: require('../../assets/avatar/mark.png')
+			}
 		]
 	}
 })
