@@ -13,9 +13,8 @@ export default Regular.extend({
 	scrollBottom (){
 		let { messageList } = this.$refs;
 		setTimeout(() => {
-			// 渲染可能需要时间，所以做了延迟
 			messageList.scrollTop = messageList.scrollHeight;
-		},30)
+		},0)
 	},
 	config (data){
 		// 有新的消息自动滚到底部

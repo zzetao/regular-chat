@@ -1,5 +1,5 @@
 import Regular from 'regularjs';
-import restate from './lib/restate.js';
+import restate from 'restate';
 
 import Layout from './views/layout/layout.js';
 import Index from './views/index/index.js';
@@ -13,7 +13,7 @@ Directives(Regular);
 import Loading from './components/loading.js';
 
 // style
-import './styles/style.scss';
+require('./styles/style.scss');
 
 // event
 Regular.event('enter', function(element, fire){
