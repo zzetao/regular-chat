@@ -1,4 +1,4 @@
 <div class="layout-input">
-	<input type="text" placeholder="YOUR NAME" r-model="name">
+	<input type="text" placeholder="YOUR NAME" on-enter="{this.startHandler(name)}" r-model="name">
 	<button class="layout-input-btn" on-click={this.startHandler(name)}>Chat Now</button>
 </div>

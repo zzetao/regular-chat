@@ -1,6 +1,6 @@
 require('shelljs/global')
 var webpack = require('webpack');
-var webpackConfig = require('./webpack.config.js');
+var webpackConfig = require('./webpack.common.js');
 
 webpackConfig.devtool = false;
 webpackConfig.plugins = webpackConfig.plugins.concat([

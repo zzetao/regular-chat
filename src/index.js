@@ -32,16 +32,17 @@ let stateman = restate({
 stateman
 	.state("app", Layout, "")
 	.state("app.index", Index, {
-		url: ""
+		url: "/"
 	})
 	.state("app.chat", Chat, {
-		url: "chat"
+		url: "/chat"
 	})
 	.on("notfound", () => {
 		console.log('[Router]: not found')
+		stateman.go('app.index')
 	})
 	.on("begin", (option) => {
-		console.log('[Router]: ',option, this)
+		console.log('[Router]: ',option)
 	})
 	.start({
 		html5: false,

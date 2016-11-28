@@ -10,7 +10,7 @@
     "url": "git+https://github.com/zzetao/regular-chat.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline",
+    "dev": "node ./webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js -p --progress --profile --colors"
   },
   "dependencies": {
