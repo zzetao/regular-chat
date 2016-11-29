@@ -27,7 +27,7 @@ export default Regular.extend({
 
 			let newMessage = {
 				position: 'left',
-				time: '09:31 AM',
+				time: this.getNow(),
 				content: result.data || 'random random random'
 			};
 
@@ -37,15 +37,27 @@ export default Regular.extend({
 
 		})
 	},
+	getNow() {
+		let now = new Date();
+		function getNumber(num){
+			let temp = parseInt(num) || 0;
+			return (temp < 10 ? '0' : '' ) + num;
+		}
+		function getAmPm(){
+			return now.getHours() < 12 ? "AM" : "PM";
+		}
+		return `${getNumber(now.getHours())}:${getNumber(now.getMinutes())} ${getAmPm()}`;
+	},
 	messageReply (message, event){
 		message = (message || "").trim();
 		if( !message ){
 			return false;
 		}
 		event.preventDefault();
+
 		let newMessage = {
 			position: 'right',
-			time: '09:30 AM',
+			time: this.getNow(),
 			content: message
 		};
 

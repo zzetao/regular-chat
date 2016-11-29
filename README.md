@@ -17,5 +17,4 @@ Beautiful Chat APP Bulit [RegularJs](https://github.com/regularjs/regular)
 3. Run `npm run dev`
 
 
-
-**build: ** `npm run build`
+**build**: `npm run build`

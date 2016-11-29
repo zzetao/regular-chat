@@ -15,6 +15,6 @@ export default Regular.extend({
 	config (data) {
 		// get height
 		
-		this.data.screenHeight = document.body.scrollHeight;
+		this.data.screenHeight = document.body.scrollHeight < 550 ? 550 : document.body.scrollHeight;
 	}
 })

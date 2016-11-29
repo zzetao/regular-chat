@@ -33,5 +33,13 @@ export default Regular.extend({
 				avatar_url: require('../../assets/avatar/mark.png')
 			}
 		]
-	}
+	},
+	init() {
+		setTimeout(() => {
+			let chatBtn = document.querySelectorAll('.chat-btn');
+			for(let btn of chatBtn) {
+				btn.onclick = () => nameInput.focus();
+			}
+		},0)
+	},
 })
