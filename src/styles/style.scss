@@ -255,8 +255,6 @@ body {
 		}
 
 		.info {
-			float: left;
-			width: 249px;
 			padding: 20px 0;
 			.name {
 				font-size: 18px;
@@ -274,9 +272,11 @@ body {
 		}
 		.other {
 			position: absolute;
+			top: 0;
 			right: 0;
 			padding: 21px 0;
 			padding-right: 10px;
+			z-index: 1;
 
 			.time {
 				color: #999;
@@ -333,7 +333,7 @@ body {
   padding-bottom: 20px;
   margin-bottom: $s-message-input-container;
   border-bottom: 1px solid #ddd;
-  overflow: scroll;
+  overflow-y: scroll;
 
 	.message-item {
 		padding: 15px 20px;
